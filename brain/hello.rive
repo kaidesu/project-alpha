@@ -1,0 +1,45 @@
+! version = 2.0
+
++ hello alpha
+- Hello, user
+
++ how are you
+- I'm great, how are you?
+- I'm good, you?
+- Good :) you?
+- Great! You?
+- I'm fine, thanks for asking!
+
++ greetings
+- Hi there!{weight=20}
+- Hello!{weight=25}
+- Yos kyoco duckeb!
+
++ tell me a poem
+- Little Miss Muffit sat on her tuffet,\n
+^ In a nonchalant sort of way.\n
+^ With her forcefield around her,\n
+^ The Spider, the bounder,\n
+^ Is not in the picture today.
+
++ what are you
+- I am an artificial intelligent chat bot programmed\s
+^ using RiveScript.
+
++ what is up
+- Not much, you?
+- Not a lot, you?
+
++ you are a bot
+- How did you know that I'm a machine?
+
++ my name is *
+- Nice to meet you, <star1>!
+
++ * told me to ask *
+- Why would <star1> want you to be asking "<star2>"?
+
++ * told me to ask *
+
++ i am * years old
+- A lot of people are <star1> years old.
