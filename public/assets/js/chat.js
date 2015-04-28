@@ -12,20 +12,25 @@ $('#chat').submit(function() {
 
 	sendMessageToAlpha($input.val());
 
-	$input.val('');
-
 	return false;
 });
 
 function sendMessageToAlpha(message) {
+	displayBotIsResponding();
+
 	var reply = alpha.reply("local-user", message);
 
-	outputAlphaResponse(reply);
+	setTimeout(function() {
+    	outputAlphaResponse(reply);
+
+    	$input.val('');
+    	$input.prop('disabled', false);
+	}, Math.floor(Math.random() * 3000) + 500);
 }
 
 function outputAlphaResponse(reply) {	
 	var $line = $('<li class="list-group-item list-group-item-success">');
-	var $message = $('<span class="text">').text(reply).html();
+	var $message = $('<span class="text">').html(reply);
 
 	$line.append($message);
 	$output.append($line);
@@ -41,4 +46,9 @@ function speechToText(message) {
 	msg.lang = 'en-US';
 
 	speechSynthesis.speak(msg);
+}
+
+function displayBotIsResponding() {
+	$input.val('Alpha is processing a response...');
+	$input.prop('disabled', true);
 }
