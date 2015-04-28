@@ -23,7 +23,7 @@ function sendMessageToAlpha(message) {
 	outputAlphaResponse(reply);
 }
 
-function outputAlphaResponse(reply) {
+function outputAlphaResponse(reply) {	
 	var $line = $('<li class="list-group-item list-group-item-success">');
 	var $message = $('<span class="text">').text(reply).html();
 
@@ -31,4 +31,14 @@ function outputAlphaResponse(reply) {
 	$output.append($line);
 
 	$output.scrollTop($output[0].scrollHeight);
+
+	speechToText(reply);
+}
+
+function speechToText(message) {
+	var msg = new SpeechSynthesisUtterance();
+	msg.text = message;
+	msg.lang = 'en-US';
+
+	speechSynthesis.speak(msg);
 }
