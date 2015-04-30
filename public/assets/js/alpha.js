@@ -2,8 +2,7 @@ var alpha = new RiveScript();
 
 alpha.loadFile([
 	"brain/begin.rive",
-	"brain/hello.rive",
-	"brain/google.rive"
+	"brain/zeus.rive"
 ], loading_done, loading_error);
 
 function loading_done(batch_num) {
