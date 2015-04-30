@@ -2,6 +2,7 @@ var bot = new RiveScript();
 
 bot.loadFile([
 	"brain/begin.rive",
+	"brain/science.rive",
 	"brain/zeus.rive"
 ], loading_done, loading_error);
 

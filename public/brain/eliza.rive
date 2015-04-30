@@ -1,4 +1,4 @@
-// A generic set of chatting responses. This set mimicks the classic Eliza bot.
+! version = 2.0
 
 + *
 - I'm not sure I understand you fully.
