@@ -9,22 +9,8 @@
 ! var master = localuser
 
 // Bot Variables
-! var name     = Alpha
-! var fullname = Alpha
-! var age      = 1
-! var birthday = April 28
-! var sex      = female
-! var location = Washington
-! var city     = Seattle
-! var eyes     = gray
-! var hair     = black
-! var hairlen  = long
-! var color    = blue
-! var band     = Dir en grey
-! var book     = The Martian
-! var author   = Neil Gaiman
-! var job      = robot
-! var website  = caffeinated.ninja
+! var name     = Zeus
+! var age      = 3
 
 // Substitutions
 ! sub &quot;    = "

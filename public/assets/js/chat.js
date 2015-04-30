@@ -18,7 +18,7 @@ $('#chat').submit(function() {
 function sendMessageToAlpha(message) {
 	displayBotIsResponding();
 
-	var reply = alpha.reply("local-user", message);
+	var reply = bot.reply("local-user", message);
 
 	setTimeout(function() {
     	outputAlphaResponse(reply);

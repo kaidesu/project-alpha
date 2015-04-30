@@ -1,6 +1,6 @@
-var alpha = new RiveScript();
+var bot = new RiveScript();
 
-alpha.loadFile([
+bot.loadFile([
 	"brain/begin.rive",
 	"brain/zeus.rive"
 ], loading_done, loading_error);
@@ -8,7 +8,7 @@ alpha.loadFile([
 function loading_done(batch_num) {
 	console.log("Batch #" + batch_num + " has finished loading.");
 
-	alpha.sortReplies();
+	bot.sortReplies();
 
 	console.log('Brain has been loaded.');
 }
